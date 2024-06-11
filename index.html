@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dia dos Namorados</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="hearts-background">
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="container">
+            <h1>Feliz Dia dos Namorados, Amor!</h1>
+            <p>Nosso primeiro dia dos namorados juntos<3</p>
+            <img src="foto.jpg" alt="Foto Romântica" class="romantic-photo">
+            <video src="video.mp4" controls class="romantic-video"></video>
+            <button class="music-button" onclick="playMusic()">Tocar Nossa Música</button>
+            <audio id="romantic-audio" src="musica.mp3"></audio>
+        </div>
+    </div>
+    <script>
+        function playMusic() {
+            var audio = document.getElementById('romantic-audio');
+            if (audio.paused) {
+                audio.play();
+            } else {
+                audio.pause();
+            }
+        }
+    </script>
+
+    
+</body>
+
+</html>

@@ -1,0 +1,130 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #ff758c, #ff7eb3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.hearts-background {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.container {
+    text-align: center;
+    color: white;
+    z-index: 2;
+    margin: 20px 0;
+}
+
+h1 {
+    font-size: 2.9em;
+    margin: 0;
+}
+
+p {
+    font-size: 1.8em;
+    margin: 10px 0 20px;
+}
+
+.romantic-photo {
+    width: 80%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 15px;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.romantic-video {
+    width: 80%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 15px;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.music-button {
+    padding: 10px 20px;
+    font-size: 1em;
+    color: white;
+    background-color: #ff4e50;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 20px 0;
+}
+
+.music-button:hover {
+    background-color: #e0454c;
+}
+
+.heart {
+    width: 50px;
+    height: 50px;
+    background-color: #ff4e50;
+    position: absolute;
+    transform: rotate(-45deg);
+}
+
+.heart:before,
+.heart:after {
+    content: "";
+    width: 50px;
+    height: 50px;
+    background-color: #ff4e50;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.heart:before {
+    top: -25px;
+    left: 0;
+}
+
+.heart:after {
+    top: 0;
+    left: 25px;
+}
+
+/* Diferentes tons de rosa e vermelho */
+.heart:nth-child(1) {
+    background-color: #ff4e50;
+    top: 20%;
+    left: 10%;
+}
+
+.heart:nth-child(2) {
+    background-color: #ff4e50;
+    top: 30%;
+    right: 15%;
+}
+
+.heart:nth-child(3) {
+    background-color: #ff4e50;
+    top: 50%;
+    left: 25%;
+}
+
+.heart:nth-child(4) {
+    background-color: #ff4e50;
+    top: 70%;
+    right: 30%;
+}
+
+.heart:nth-child(5) {
+    background-color: #ff4e50;
+    top: 80%;
+    left: 50%;
+}
