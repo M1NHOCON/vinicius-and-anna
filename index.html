@@ -13,13 +13,62 @@
         <div class="heart"></div>
         <div class="heart"></div>
         <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
         <div class="container">
             <h1>Feliz Dia dos Namorados, Amor!</h1>
-            <p>Nosso primeiro dia dos namorados juntos<3</p>
-            <img src="foto.jpg" alt="Foto Romântica" class="romantic-photo">
-            <video src="video.mp4" controls class="romantic-video"></video>
-            <button class="music-button" onclick="playMusic()">Tocar Nossa Música</button>
-            <audio id="romantic-audio" src="musica.mp3"></audio>
+            <img src="foto.jpg" alt="Foto Romântica" class="romantic-photo"><br>
+            <button class="music-button" onclick="playMusic()">Nossa Música</button>
+            <p>Gosto muito dos nossos momentos e acho que<br>esses dois videos expressam bem issokkk</p>
+            <video id="romantic-video" src="video.mp4" controls class="romantic-video"></video><br>
+            <video id="romantic-video" src="video2.mp4" controls class="romantic-video"></video><br>
+            <button class="music-button" onclick="playMusic()">Nossa Música</button><br>
+            <audio id="romantic-audio" src="musica.mp3"></audio><br>
+            <p>Não aguento esse sorriso lindo meu deus kkk</p><br>
+            <img src="mini-foto (1).jpg" alt="mini Foto Romântica" class="mini-romantic-photo">
+            <img src="mini-foto (2).jpg" alt="mini Foto Romântica" class="mini-romantic-photo"><br>
+            <img src="mini-foto (5).jpg" alt="mini Foto Romântica" class="mini-romantic-photo">
+            <img src="mini-foto (4).jpg" alt="mini Foto Romântica" class="mini-romantic-photo"><br>
+            <img src="mini-foto (3).jpg" alt="mini Foto Romântica" class="mini-romantic-photo">
+            <img src="mini-foto (6).jpg" alt="mini Foto Romântica" class="mini-romantic-photo"><br>
+            <img src="mini-foto (7).jpg" alt="mini Foto Romântica" class="mini-romantic-photo">
+            <img src="mini-foto (8).jpg" alt="mini Foto Romântica" class="mini-romantic-photo"><br><br>
+            <button class="music-button" onclick="playMusic()">Nossa Música</button>
+            <p>Nosso primeiro (de muitos) dia dos namorados juntos</p>
+            <h1>TE AMO MEU BENZINHO!!</h1>
         </div>
     </div>
     <script>
@@ -27,10 +76,18 @@
             var audio = document.getElementById('romantic-audio');
             if (audio.paused) {
                 audio.play();
+                
             } else {
                 audio.pause();
             }
+        
         }
+        document.addEventListener("DOMContentLoaded", function() {
+            var video = document.getElementById('romantic-video');
+            var audio = document.getElementById('romantic-audio');
+            video.volume = 1.0; // Garantir que o volume do vídeo esteja no máximo
+            audio.volume = 0.05; // Definir o volume da música fixo (por exemplo, 50%)
+        });
     </script>
 
     
